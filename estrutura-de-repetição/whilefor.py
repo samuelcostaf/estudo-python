@@ -28,6 +28,4 @@ pl.append('C')
 print(pl)
 pl.insert(0, 'C')
 print(pl)
-
-    
-
+print(*pl)
