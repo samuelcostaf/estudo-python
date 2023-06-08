@@ -1,5 +1,5 @@
 
-<h1><i class="fa-brands fa-python" style="color: #fff70a;"></i>Projeto de reconhecimento de fala com python:</h1>
+<h1>🐍Projeto de reconhecimento de fala com python:</h1>
 
 
 
