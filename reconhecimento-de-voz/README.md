@@ -1,3 +1,10 @@
+<head>
+    <style>
+        strong{
+            color: red;
+        }
+    </style>
+</head>
 <h1>Projeto de reconhecimento de fala com python:</h1>
 
 <strong>para este projeto você precisa instalar as bibliotecas PyAudio e SpeechRecognition</strong>
