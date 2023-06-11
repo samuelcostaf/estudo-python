@@ -15,4 +15,6 @@ def nova_tela():
 
 botao_novatela = win.CTkButton(master=jan, text="Abrir nova janela", command=nova_tela).place(x=300,y=100)
 
+label = win.CTkLabel(jan,text="Ola Mundo!").place(x=100,y=500)
+
 jan.mainloop()
