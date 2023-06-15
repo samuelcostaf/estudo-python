@@ -47,21 +47,36 @@ class App(ctk.CTk):
         obs_entry = ctk.CTkTextbox(self, width=500, height=150, font=("Arial", 18), border_color="#aaa", border_width=2, fg_color="transparent")
 
     #criando as labels
-        lb_nome = ctk.CTkLabel(self, text="Por favor! Preencha todos os campos do formulario", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
+        lb_nome = ctk.CTkLabel(self, text="Nome Completo", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
 
-        lb_contato = ctk.CTkLabel(self, text="Por favor! Preencha todos os campos do formulario", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
+        lb_contato = ctk.CTkLabel(self, text="Contato", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
 
-        lb_idade = ctk.CTkLabel(self, text="Por favor! Preencha todos os campos do formulario", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
+        lb_idade = ctk.CTkLabel(self, text="insira sua idade: ", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
 
-        lb_genero = ctk.CTkLabel(self, text="Por favor! Preencha todos os campos do formulario", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
+        lb_genero = ctk.CTkLabel(self, text="Gênero", font=("Century Gothic bold"), text_color=['#000', '#fff'])
 
-        lb_endereço = ctk.CTkLabel(self, text="Por favor! Preencha todos os campos do formulario", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
+        lb_endereço = ctk.CTkLabel(self, text="Endereço", font=("Century Gothic bold"), text_color=['#000', '#fff'])
 
-        lb_obs = ctk.CTkLabel(self, text="Por favor! Preencha todos os campos do formulario", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
+        lb_obs = ctk.CTkLabel(self, text="Observações", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
 
     #posicionando os elementos na janela
+        lb_nome.place(x=50, y=120)
+        name_entry.place(x=50, y=150)
 
-    
+        lb_contato.place(x=450, y=120)
+        contato_entry.place(x=450, y=150)
+
+        lb_idade.place(x=300,y=190)
+        idade_entry.place(x=300,y=220)
+
+        lb_genero.place(x=500,y=190)
+        genero_combobox.place(x=500,y=220)
+
+        lb_endereço.place(x=50,y=190)
+        endereço_entry.place(x=50,y=220)
+
+        lb_obs.place(x=50, y=260)
+        obs_entry.place(x=150,y=260)
 
     def change_apm(self, new_apm):
         ctk.set_appearance_mode(new_apm)
