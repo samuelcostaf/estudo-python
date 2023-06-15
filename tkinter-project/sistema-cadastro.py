@@ -59,6 +59,8 @@ class App(ctk.CTk):
 
         lb_obs = ctk.CTkLabel(self, text="Observações", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
 
+        btn_submit = ctk.CTkButton(self, text="Salvar Dados".upper(), command=submit, fg_color="#151", hover_color="#131")
+
     #posicionando os elementos na janela
         lb_nome.place(x=50, y=120)
         name_entry.place(x=50, y=150)
