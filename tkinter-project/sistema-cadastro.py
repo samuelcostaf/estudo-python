@@ -32,6 +32,19 @@ class App(ctk.CTk):
         span = ctk.CTkLabel(self, text="Por favor! Preencha todos os campos do formulario", font=("Century Gothic bold", 24), text_color=['#000', '#fff']).place(x=50, y=70)
 
 
+    #entrys 
+
+        name_entry = ctk.CTkEntry(self, width=350, font=("Century Gohtic", 16), fg_color="transparent")
+        contato_entry = ctk.CTkEntry(self, width=200, font=("Century Gohtic", 16), fg_color="transparent")
+        endereço_entry = ctk.CTkEntry(self, width=200, font=("Century Gohtic", 16), fg_color="transparent")
+        idade_entry = ctk.CTkEntry(self, width=150, font=("Century Gohtic", 16), fg_color="transparent")
+
+    #Combobox
+        genero_combobox = ctk.CTkComboBox(self, values=["Masculino", "Feminino"], font=("Sans serif", 14))
+        genero_combobox.set("Masculino")
+
+    #entrada de observações
+        obs_entry = ctk.CTkTextbox(self, width=500, height=150, font=("Arial", 18), border_color="#aaa", border_width=2, fg_color="transparent")
 
     #criando as labels
         lb_nome = ctk.CTkLabel(self, text="Por favor! Preencha todos os campos do formulario", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
@@ -45,6 +58,10 @@ class App(ctk.CTk):
         lb_endereço = ctk.CTkLabel(self, text="Por favor! Preencha todos os campos do formulario", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
 
         lb_obs = ctk.CTkLabel(self, text="Por favor! Preencha todos os campos do formulario", font=("Century Gothic bold", 24), text_color=['#000', '#fff'])
+
+    #posicionando os elementos na janela
+
+    
 
     def change_apm(self, new_apm):
         ctk.set_appearance_mode(new_apm)
