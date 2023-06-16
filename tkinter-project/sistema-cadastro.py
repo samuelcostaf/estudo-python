@@ -45,11 +45,11 @@ class App(ctk.CTk):
 
         def clear():
             pass
-            name = name_entry.set("")
-            contact = contact_value.set("")
-            age = idade_value.set("")
-            endereço = endereço_value.set("")
-            obs = obs_entry.get(0.0, END)
+            name_entry.set("")
+            contact_value.set("")
+            idade_value.set("")
+            endereço_value.set("")
+            obs_entry.get(0.0, END)
 
         name_value = StringVar
         contact_value = StringVar
@@ -57,10 +57,10 @@ class App(ctk.CTk):
         idade_value = StringVar
     #entrys 
 
-        name_entry = ctk.CTkEntry(self, width=350,textvariable="name_value",font=("Century Gohtic", 16), fg_color="transparent")
-        contato_entry = ctk.CTkEntry(self, width=200, textvariable="contact_value", font=("Century Gohtic", 16), fg_color="transparent")
-        endereço_entry = ctk.CTkEntry(self, width=200, textvariable="endereço_value", font=("Century Gohtic", 16), fg_color="transparent")
-        idade_entry = ctk.CTkEntry(self, width=150, textvariable="idade_value", font=("Century Gohtic", 16), fg_color="transparent")
+        name_entry = ctk.CTkEntry(self, width=350,textvariable=name_value,font=("Century Gohtic", 16), fg_color="transparent")
+        contato_entry = ctk.CTkEntry(self, width=200, textvariable=contact_value, font=("Century Gohtic", 16), fg_color="transparent")
+        endereço_entry = ctk.CTkEntry(self, width=200, textvariable=endereço_value, font=("Century Gohtic", 16), fg_color="transparent")
+        idade_entry = ctk.CTkEntry(self, width=150, textvariable=idade_value, font=("Century Gohtic", 16), fg_color="transparent")
 
     #Combobox
         genero_combobox = ctk.CTkComboBox(self, values=["Masculino", "Feminino"], font=("arial", 14))
