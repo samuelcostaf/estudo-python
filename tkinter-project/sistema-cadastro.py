@@ -35,11 +35,21 @@ class App(ctk.CTk):
             #dados dos entrys
             name = name_entry.get()
             contact = contact_value.get()
-            
+            age = idade_value.get()
+            endereço = endereço_value.get()
+            genero = genero_combobox.get()
+            obs = obs_entry.get(0.0, END)
+
+
             pass
 
         def clear():
             pass
+            name = name_entry.set("")
+            contact = contact_value.set("")
+            age = idade_value.set("")
+            endereço = endereço_value.set("")
+            obs = obs_entry.get(0.0, END)
 
         name_value = StringVar
         contact_value = StringVar
